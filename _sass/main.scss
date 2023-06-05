@@ -1,0 +1,61 @@
+body {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-size: 16px;
+}
+
+a {
+  color: darken(#b3e2ff, 42%);
+}
+
+main {
+  max-width: 46rem;
+  padding: 2rem;
+}
+
+section#jobs {
+  h2 {
+    background: #b3e2ff;
+    padding: 0.5rem;
+  }
+}
+.job {
+  padding: 1rem;
+  list-style: none;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  h3 {
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .from:after {
+    content: " → ";
+  }
+
+  .from, .to {
+    font-size: 0.9rem;
+    color: #555;
+    flex-grow: 0;
+  }
+
+  .location {
+    font-size: 0.9rem;
+    text-align: right;
+    flex-grow: 1;
+  }
+
+  .employer {
+    text-decoration: underline;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+}

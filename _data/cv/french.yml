@@ -1,0 +1,98 @@
+education:
+  - from: 2018
+    title: LP Assistant Chef de Projet Informatique (ACPI)
+    etab: Université Montpellier 2
+    location: Montpellier, France
+jobs:
+  - from: 2010
+    to: 2011
+    employer: Google
+    location: à distance
+    title: Google Summer of Code
+    description: |
+      Sélectionné à deux reprises dans le cadre du programme <a href="https://summerofcode.withgoogle.com/">Google
+      Summer of Code (GSOC)</a> qui sponsorise des étudiants pour
+      travailler avec des organisations de développement
+      open-source. Deux fois en partenariat avec l'environnement de
+      bureau GNOME pour le développement d'une application de
+      présentation puis l'intégration d'une horloge universelle dans
+      le bureau.
+  - from: 2011
+    to: 2012
+    title: Développeur iOS
+    employer: Plizy
+    location: Paris, San Francisco – FR/USA
+    description: |
+      Co-développeur de la version iPad de Plizy, un aggrégateur de
+      contenus vidéos en ligne; gestion de l’organisation de ces
+      contenus, des allocations mémoire et du rendu vidéo optimisé.
+  - from: 2013
+    to: 2014
+    title: Développeur web
+    employer: Pact Coffee
+    location: Londres, Royaume-Uni
+    description: |
+      Deuxième développeur à rejoindre l’équipe, assurant le
+      développement et la croissance du site d’environ 30 commandes
+      par jour à 1500 lors de mon départ. Écosystème Rails et tests
+      automatisés.
+  - from: 2014
+    to: 2015
+    location: Londres, Royaume-Uni
+    title: Lead développeur
+    employer: Bloom & Wild
+    description: |
+      Création du site client et administratif de Bloom & Wild;
+      portage d’une solution existante Magento vers une application
+      Rails assurant à la fois le portail client et les commandes mais
+      aussi les tâches logistiques quotidiennes pour assurer leurs
+      livraisons.
+  - from: 2015
+    to: 2017
+    title: Développeur web
+    employer: MusicGlue
+    location: Londres, Royaume-Uni
+    description: |
+      Refonte du site de MusicGlue en plusieurs micro-services
+      Node/Express communiquant à un frontend par le biais de Relay et
+      GraphQL.
+  - from: 2017
+    to: 2019
+    title: Développeur web
+    employer: ASOS.com
+    location: Londres, Royaume-Uni
+    description: |
+      Refonte du site d’ASOS sur une structure
+      Node+React. Collaboration étroite avec les équipes de
+      testeurs/QA pour assurer la fiabilité d’un site qui reçoit des
+      millions de visites par an.
+    website: www.asos.com
+  - from: 2019
+    to: 2021
+    title: Développeur full-stack
+    employer: Government Digital Services (GDS)
+    location: Londres, Royaume-Uni
+    description: |
+      Travail au sein de l’équipe GovWifi et en collaboration avec les
+      autres équipes de GOV.UK.  Maintenance du site web, du portail
+      de gestion administrative, mise en conformité à travers les
+      règles d’accessibilité WCAG. Travail avec les autres membres de
+      l’équipe dans une approche UCD (User-centered design).
+    website: www.wifi.service.gov.uk
+  - from: 2020
+    to: 2021
+    title: Lead développeur
+    employer: Unboxed
+    location: Londres, Royaume-Uni
+    description: |
+      Conception et maintenance de solutions web pour différents
+      acteurs du secteur public britannique: NHS (système de santé
+      publique), parlement écossais, mairies et administrations
+      territoriales (Southwark, Lambeth, Buckinghamshire). Gestion
+      d’équipe, des relations clients et de la veille technologique.
+  - from: 2022
+    to: présent
+    title: Lead développeur
+    employer: Direction interministérielle du Numérique (DINUM)
+    location: Paris, France
+    description: |

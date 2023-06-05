@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Yolo</title>
+  </head>
+  <body>
+    {% assign cv = site.data.cv.french %}
+
+    <main>
+      {{ content }}
+
+      <section id="jobs">
+        <h2>Expérience professionnelle</h2>
+        <ul>
+          {% for job in cv.jobs %}
+            <li class="job">
+              <div class="header">
+                <h3>{{ job.title }}</h3>
+                <span class="from">{{ job.from }}</span>
+                <span class="to">{{ job.to }}</span>
+                <span class="location">{{ job.location }}</span>
+              </div>
+              <span class="employer">{{ job.employer }}</span>
+              <p>{{ job.description }}</p>
+            </li>
+          {% endfor %}
+      </section>
+    </main>
+  </body>
+</html>
