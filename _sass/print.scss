@@ -1,0 +1,15 @@
+@media print {
+  body {
+    padding: 1pt;
+    margin: 0;
+    font-size: 9pt;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  section#jobs h2 {
+    margin-bottom: 0;
+  }
+}

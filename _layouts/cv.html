@@ -5,28 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <title>Yolo</title>
+    <title>{{ page.title }}</title>
   </head>
   <body>
     {% assign cv = site.data.cv.french %}
 
     <main>
-      {{ content }}
+      <section id="info">
+        <h1>{{ cv.info.title }}</h1>
+        <span class="address">{{ cv.info.address }}</span>
+        <span class="tel">{{ cv.info.tel }}</span>
+      </section>
+
+      <section id="content">{{ content }}</section>
 
       <section id="jobs">
         <h2>Expérience professionnelle</h2>
-        <ul>
-          {% for job in cv.jobs %}
-            <li class="job">
-              <div class="header">
-                <h3>{{ job.title }}</h3>
-                <span class="from">{{ job.from }}</span>
-                <span class="to">{{ job.to }}</span>
-                <span class="location">{{ job.location }}</span>
-              </div>
-              <span class="employer">{{ job.employer }}</span>
-              <p>{{ job.description }}</p>
-            </li>
+        <ol>
+          {% assign jobs = cv.jobs | sort: "from" | reverse %}
+          {% for job in jobs %}
+          <li class="job">
+            <div class="header">
+              <h3>{{ job.title }} <span class="from">{{ job.from }}</span></h3>
+              <span class="location">{{ job.location }}</span>
+            </div>
+            <a href="{{ job.url }}" class="employer">
+              {% if job.acronym %}
+              <abbr title="{{ job.employer }}">{{ job.acronym }}</abbr>
+              {% else %}
+              {{ job.employer }}
+              {% endif %}
+            </a>
+            <p class="description">
+              {{ job.description }}
+            </p>
+          </li>
+          {% endfor %}
+      </section>
+
+      <section id="education">
+        <h2>Éducation</h2>
+        <ol>
+          {% for formation in cv.education %}
+          <li class="formation">
+            <div class="header">
+              <h3>{{ formation.title }}</h3>
+              <span class="from">{{ formation.when }}</span>
+              <span class="location">{{ formation.location }}</span>
+              <p class="subtitle">{{ formation.subtitle }}</p>
+            </div>
+          </li>
           {% endfor %}
       </section>
     </main>
