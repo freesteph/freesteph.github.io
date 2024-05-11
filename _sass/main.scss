@@ -3,9 +3,11 @@
 
 $accent-color: rgb(255, 0, 131);
 $alt-color: #407880;
+$big-font-size: 200%;
 
 h1 {
   font-size: 220%;
+  margin: 0.5rem 0;
 }
 
 h2 {
@@ -31,6 +33,7 @@ section#info {
   display: flex;
   align-items: baseline;
   gap: 2rem;
+  margin: 0;
 }
 
 main {
@@ -44,30 +47,20 @@ section {
   }
 
   ol {
+    margin-top: 0;
     display: flex;
     flex-wrap: wrap;
-
     padding-left: 0;
   }
 }
 
 li {
   flex-basis: 25%;
-  // &:nth-of-type(odd) {
-  //   background: #DDD;
-  // }
-
-  // &:nth-of-type(even) {
-  //   background: #EEE;
-  // }
-
-
   box-sizing: border-box;
   padding: 0.5rem;
   margin: 0;
 
   .header {
-    // display: flex;
     flex-direction: row;
     align-items: baseline;
     padding-bottom: 0.4rem;
@@ -98,9 +91,12 @@ li {
     border-bottom: 2px solid $accent-color;
   }
 
-  p {
+  .content {
     font-size: 0.8rem;
-    margin-bottom: 0;
+  }
+
+  .technology {
+    color: $alt-color;
   }
 }
 
@@ -108,7 +104,7 @@ li {
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
       .from {
-        font-size: 200% - $i * 10;
+        font-size: $big-font-size - $i * 10;
         color: darken($accent-color, $i * 5%)
       }
     }
@@ -120,16 +116,24 @@ li {
 }
 
 .formation {
-  flex-basis: 25%;
-
-  .subtitle {
-    font-size: 1rem;
-    font-weight: normal;
-  }
-
   .from {
     font-weight: bold;
     font-size: 1.6rem;
     color: $alt-color;
+  }
+}
+
+section#facts {
+  max-width: 30rem;
+
+  p {
+    font-size: 0.9rem;
+    max-width: 33rem;
+  }
+}
+
+section#education {
+  li {
+    flex-basis: 33%;
   }
 }

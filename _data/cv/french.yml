@@ -3,36 +3,47 @@ info:
   address: 36 rue Coquillière, 75001 Paris
   tel: +33 7 69 84 39 76
 
+facts:
+  - maîtrise de l'anglais
+  - espagnol scolaire
+  - cycliste
+  - the Beatles
+  - photographie
+  - Syrah, Grenache, Malbec
+  - calligraphie
+  - Epiphone Casino
+  - Camden Wit
+  - Geoff Rowley
+  - Chelsea Boots
+  - Emacs
+  - Georges Brassens
+  - dust_2
+  - Suzuka
+  - Tapping the Admiral
+  - boogie-woogie
+  - typographie
+  - œufs brouillés.
+
 education:
   - when: 2011
     title: Licence professionnelle
     subtitle: Assistant Chef de Projet Informatique (ACPI)
     where: Université Montpellier 2
+    url: https://www.umontpellier.fr/
     location: Montpellier, France
   - when: 2010
     title: Diplôme universitaire technique
     subtitle: Informatique
     where: Université Montpellier 2
+    url: https://www.umontpellier.fr/
     location: Montpellier, France
   - when: 2008
     title: Baccalauréat scientifique
     subtitle: option physique – mention AB
-    where: Université Montpellier 2
+    where: Lycée Georges Clémenceau
+    url: https://www.onisep.fr/ressources/Univers-Lycee/lycees/Occitanie/Herault/lycee-georges-clemenceau
     location: Montpellier, France
 jobs:
-  - from: 2010
-    to: 2011
-    employer: Google
-    location: à distance
-    title: Développeur
-    description: |
-      Sélectionné à deux reprises dans le cadre du programme <a href="https://summerofcode.withgoogle.com/">Google
-      Summer of Code (GSOC)</a> qui sponsorise des étudiants pour
-      travailler avec des organisations de développement
-      open-source. Deux fois en partenariat avec l'environnement de
-      bureau GNOME pour le développement d'une application de
-      présentation puis l'intégration d'une horloge universelle dans
-      le bureau.
   - from: 2011
     to: 2012
     title: Développeur iOS
@@ -41,83 +52,89 @@ jobs:
     location: San Francisco, USA
     description: |
       Co-développeur de la version iPad de Plizy, un aggrégateur de
-      contenus vidéos en ligne; gestion de l’organisation de ces
-      contenus, des allocations mémoire et du rendu vidéo optimisé.
+      contenus vidéos en ligne.
+    technology: Objective-C / iOS
   - from: 2013
     to: 2014
     title: Développeur web
     employer: Pact Coffee
     location: Londres, Royaume-Uni
-    description: |
-      Deuxième développeur à rejoindre l’équipe, assurant le
-      développement et la croissance du site d’environ 30 commandes
-      par jour à 1500 lors de mon départ. Écosystème Rails et tests
-      automatisés.
+    description: Développeur principal du site web de Pact Coffee.
+    url: https://www.pactcoffee.com/
+    technology: Ruby / Rails
   - from: 2014
     to: 2015
     location: Londres, Royaume-Uni
     title: Lead développeur
     employer: Bloom & Wild
+    url: https://www.bloomandwild.com/
     description: |
-      Création du site client et administratif de Bloom & Wild;
-      portage d’une solution existante Magento vers une application
-      Rails assurant à la fois le portail client et les commandes mais
-      aussi les tâches logistiques quotidiennes pour assurer leurs
-      livraisons.
+      Création et refonte du site client & administratif de Bloom & Wild.
+    technology: Ruby / Rails
   - from: 2015
     to: 2017
     title: Développeur web
     employer: MusicGlue
+    url: https://www.musicglue.com/
     location: Londres, Royaume-Uni
     description: |
       Refonte du site de MusicGlue en plusieurs micro-services
       Node/Express communiquant à un frontend par le biais de Relay et
       GraphQL.
+    technology: JavaScript / React
   - from: 2017
     to: 2019
     title: Développeur web
     employer: ASOS.com
     location: Londres, Royaume-Uni
+    url: https://www.asos.com/
     description: |
-      Refonte du site d’ASOS sur une structure
-      Node+React. Collaboration étroite avec les équipes de
-      testeurs/QA pour assurer la fiabilité d’un site qui reçoit des
-      millions de visites par an.
+      Développement de la refonte du site d’ASOS.com ; développement,
+      tests, assurance qualité, formation et mentoring des nouvelles
+      recrues.
     website: www.asos.com
+    technology: JavaScript / React
   - from: 2019
     to: 2021
-    title: Développeur full-stack
-    employer: Government Digital Services (GDS)
+    title: Développeur f-s
+    acronym: GDS
+    employer: Government Digital Services
+    url: https://www.gov.uk/government/organisations/government-digital-service
     location: Londres, Royaume-Uni
     description: |
-      Travail au sein de l’équipe GovWifi et en collaboration avec les
-      autres équipes de GOV.UK.  Maintenance du site web, du portail
-      de gestion administrative, mise en conformité à travers les
-      règles d’accessibilité WCAG. Travail avec les autres membres de
-      l’équipe dans une approche UCD (User-Centered Design).
+      Maintenance et développement de la suite GovWifi ;
+      développement, devops, accessibilité et recherche utilisateur.
     website: www.wifi.service.gov.uk
+    technology: Ruby / Rails
   - from: 2020
     to: 2021
     title: Lead développeur
     employer: Unboxed
+    url: https://unboxed.co/
     location: Londres, Royaume-Uni
     description: |
-      Conception et maintenance de solutions web pour différents
-      acteurs du secteur public britannique: NHS (système de santé
-      publique), parlement écossais, mairies et administrations
-      territoriales (Southwark, Lambeth, Buckinghamshire). Gestion
-      d’équipe, des relations clients et de la veille technologique.
+      Travaux avec la NHS (National Health
+      Service), le parlement écossais, les mairies et administrations locales
+      (Southwark, Lambeth, Buckinghamshire). Développement,
+      conception, gestion client et assurance qualité.
+    technology: Ruby / Rails
   - from: 2022
     to: présent
     title: Lead développeur
     employer: Direction Interministérielle du Numérique
     acronym: DINUM
+    url: https://www.numerique.gouv.fr/dinum/
     location: Paris, France
     summary: Numérique d'intéret général
-    description: |
+    description:
+      Développement de commandes politiques, maintenance produits
+      transverses et accompagnement des équipes vers des standards de
+      qualité de contenu, de code et d'accessibilité.
+    long: |
       Retour en France et prise de poste en tant que Lead Développeur
       dans l'équipe de l'incubateur beta.gouv.fr, dans le programme
       de la Brigade d'Intervention Numérique (BIN). Travail
       transverse, recommendations techniques, investigations,
       animation de la communauté et développement de politiques
       prioritaires gouvernementales (PPG) en méthodologie agile.
+    technology: Ruby / Rails

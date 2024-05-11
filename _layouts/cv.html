@@ -19,7 +19,7 @@
 
       <section id="content">{{ content }}</section>
 
-      <section id="jobs">
+      <section id="jobs tiled">
         <h2>Expérience professionnelle</h2>
         <ol>
           {% assign jobs = cv.jobs | sort: "from" | reverse %}
@@ -36,9 +36,10 @@
               {{ job.employer }}
               {% endif %}
             </a>
-            <p class="description">
-              {{ job.description }}
-            </p>
+            <div class="content">
+              <p class="description">{{ job.description }}</p>
+              <p class="technology">{{ job.technology }}</p>
+            </div>
           </li>
           {% endfor %}
       </section>
@@ -50,12 +51,23 @@
           <li class="formation">
             <div class="header">
               <h3>{{ formation.title }}</h3>
-              <span class="from">{{ formation.when }}</span>
+              <span class="from date">{{ formation.when }}</span>
               <span class="location">{{ formation.location }}</span>
-              <p class="subtitle">{{ formation.subtitle }}</p>
+            </div>
+            <a href="{{ formation.url }}" class="employer">{{ formation.where }}</a>
+            <div class="content">
+              <p class="subtitle description">{{ formation.subtitle }}</p>
             </div>
           </li>
           {% endfor %}
+      </section>
+
+      <section id="facts">
+        <h2>Divers</h2>
+        {% assign facts = cv.facts | join: " – " %}
+        <p>
+          {{ facts }}
+        </p>
       </section>
     </main>
   </body>

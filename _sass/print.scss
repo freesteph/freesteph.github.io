@@ -1,15 +1,47 @@
 @media print {
+  $big-font-size: 100%;
+
   body {
-    padding: 1pt;
+    padding: 0;
     margin: 0;
-    font-size: 9pt;
+    font-size: 8pt;
+  }
+
+  main {
+    margin: 0;
+    padding: 13pt;
   }
 
   h1 {
     margin: 0;
   }
 
+  section#content {
+    max-width: 30rem;
+  }
+
   section#jobs h2 {
     margin-bottom: 0;
+  }
+
+  section {
+    .location {
+      font-size: 8pt;
+      margin: 0;
+    }
+
+    li {
+      .date {
+        font-size: 1rem !important;
+      }
+    }
+
+    .content {
+      font-size: 6pt !important;
+    }
+  }
+
+  section#facts p {
+    font-size: inherit;
   }
 }
